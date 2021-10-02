@@ -1,17 +1,57 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Brody Pearlman</title>
-  <script src="main.js" </script>
+  <script>
+  
+   var images = new Array();
+    images[0] = ""
+    images[1] = ""
+    images[2] = ""
+    images[3] = ""
+    images[4] = ""
+    images[5] = ""
+    
+
+  //Creates an array for the dice image
+  function
+  numberGenerator(numberLimit) {
+
+    return math.floor(math.random() * numberLimit)
+
+  }
+  funtion start(x) {
+    player1 = numberGenerator(x)
+    player2 = numberGenerator(x)
+    document.getElementById("image1").src images[player1]
+    document.getElementById("image2").src images[player2]
+    if(player1 > player2) { document.getElementById("0utput").innerHTML = "Player 1 has won!"}
+    else if(player2 > player1) { document.getElementById("0utput").innerHTML = "Player 2 has won!"}
+    else{document.getElementById("0utput").innerHTML = "It is a draw!"}
+  }
+}
+</script>
+<<style type="text/css"">
+  body {
+    backround color: gray; font-family: Helvetica;
+    text-align: start; border: solid;
+  }
+  button{
+    width: 150px; height: 50px; backround-color: orange;
+    font-family: Heletiva;
+  }
+</style>
   </head>
   <body>
-    <button onclick = "start()" width = "500px" align "center">Start Dice Game!</button>
+    <p> How many sides should the dice have? </P>
 
+    <button onclick = "start(6)" width = "150px" align "center">Start with a 6 dice!</button>
+<button onclick = "start(4)" width = "150px" align "center">Start with a 4 dice!</button>
+<button onclick = "start(3)" width = "150px" align "center">Start with a 3 dice!</button>
     <p> First Player </p>
     <img id ="image2" src = image </img>
     <p> Second Player </p>
     <img id ="image2" src = image </img>
   </body>
-  <<h2 id = "Output" </h2>
+  <<h1 id = "0utput" </h1>
 </html>
