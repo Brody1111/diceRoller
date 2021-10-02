@@ -1,10 +1,10 @@
 body{
-    backround-color: paleGreen; font-family: Helvetica;
-    text-align: center; border: solid;
+    backround-color: PaleGreen; font-family: Helvetica;
+    text-align: center; 
   }
   button{
     width: 150px; height: 50px; color: orange;
-    font-family: Heletiva;
+    font-family: Heletiva; font-weight: bold;
   }
 h1{ color: orange; font-size: 100px; font-family: Heletiva;} 
 p { color: grey; font-size: 50px; font-family: Heletiva;}
