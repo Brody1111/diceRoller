@@ -22,8 +22,8 @@
 
   }
   funtion start(x) {
-    player1 = numberGenerator(x)
-    player2 = numberGenerator(x)
+  var  player1 = numberGenerator(x)
+  var  player2 = numberGenerator(x)
     document.getElementById("image1").src = images[player1]
     document.getElementById("image2").src = images[player2]
     if(player1 > player2) { document.getElementById("0utput").innerHTML = "Player 1 has won!"}
